@@ -1,0 +1,79 @@
+.sidebar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+
+.rightContainer {
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Card {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Card img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.Card div button {
+    background-color: green;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Card div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.mainContainer {
+    display: flex;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.basicInfo {
+    display: flex;
+}
+
+.basicInfo div {
+    margin-right: 40px;
+}
+
+.rightContainer h2 {
+    margin-top: 10px;
+}
+
+.pictureContainer {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.pictureContainer button {
+    position: absolute;
+}
+
+.leftButton {
+    top: 100px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.rightButton {
+    top: 100px;
+    left: 300px;
+    z-index: 1000;
+}

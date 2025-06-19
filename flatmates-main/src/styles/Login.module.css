@@ -1,0 +1,46 @@
+.mainContainer{
+    display: flex;
+}
+.rightContainer{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.rightContainer *{
+    margin: 7px;
+    font-size: 13px;
+}
+.logo{
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.header{
+    font-size: 20px;
+    font-weight: 1000;
+}
+.para{
+    margin-bottom: 25px;
+    font-size: 10px;
+}
+.rightContainer p{
+    width: 70%;
+}
+.rightContainer input{
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #9CA3AF;
+    outline: none;
+    width: 70%;
+}
+.rightContainer button{
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #9CA3AF;
+    outline: none;
+    width: 70%;
+}
+.OTPbutton{
+    font-size: 10px;
+    font-weight: 900;
+    background-color: #1F2937;
+    color: white;
+}
