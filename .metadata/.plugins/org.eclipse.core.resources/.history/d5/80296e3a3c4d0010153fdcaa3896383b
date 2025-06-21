@@ -1,0 +1,26 @@
+package app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import app.entity.Users;
+import app.repository.UserRepo;
+
+@Service
+public class UserService{
+	
+	@Autowired
+	private UserRepo repo;
+	
+	private BCryptPasswordEncoder bCryptPasswordEncoder = new BCryptPasswordEncoder(12);
+	
+	public Users saveUser(Users user) {
+		user.setPassword(bCryptPasswordEncoder.encode(user.getPassword()));
+		return repo.save(user);
+	}
+	
+	public String verify(Users user) {
+		return "ds";
+	}
+}

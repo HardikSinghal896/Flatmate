@@ -1,0 +1,23 @@
+package app.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import app.entity.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+
+import app.repository.RepositoryData;
+
+public class MyUserDetailsService implements UserDetailsService {
+
+	@Autowired
+	private RepositoryData repo;
+	
+	@Override
+	public org.springframework.security.core.userdetails.UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+		// TODO Auto-generated method stub
+		UserDetails userDetails = repo.findByUsername(username);
+		return userDetails;
+	}
+	
+	
+}
